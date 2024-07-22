@@ -1,2 +1,2 @@
-# homes-api
-Projeto de uma api para o site de imóveis homes app
+# Homes Api
+Projeto de uma api desenvolvida com a linguagem de programação PHP para o site de imóveis homes app.
