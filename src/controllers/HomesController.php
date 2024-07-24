@@ -1,11 +1,16 @@
 <?php
 
+require '../src/models/Homes.php';
+
 class HomesController {
     public function getHomes() {
-        $response = [
-            ["id" => 1, "name" => "Casa 01"],
-            ["id" => 2, "name" => "Casa 02"],
-        ];
+        $response = [];
+        
+        $casa01 = new Homes(1, 'Casa 01');
+        $casa02 = new Homes(2, 'Casa 02');
+
+        array_push($response, $casa01, $casa02);
+
         $this->sendResponse(200, $response);
     }
 
